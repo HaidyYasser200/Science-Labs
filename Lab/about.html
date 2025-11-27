@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Educational Technology Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            background: linear-gradient(45deg, #e0e0e0, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #f195fd, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 50px;
+        }
+        .about-section {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+        }
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+            z-index: -1;
+        }
+        .about-text {
+            font-size: 1.4rem;
+            line-height: 1.9;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #f5f5f5;
+        }
+        .about-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            margin: 0 auto;
+        }
+        .team-section {
+            padding: 50px 0;
+        }
+        .team-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card {
+            background: #ffffff;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 50px;
+           
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+        }
+        .card-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 15px;
+           /* background: linear-gradient(135deg, #4a148c 0%, #fa029b 100%);*/
+            background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .names {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.3;
+            background: linear-gradient(135deg, #4a148c 0%, #fa029b 100%);
+           /* background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);*/
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+            .about-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="about-section" data-aos="fade-up">
+            <h1>About US</h1>
+            <p class="about-text" data-aos="fade-in" data-aos-delay="200">
+                We are students of the Special Diploma in Educational Technology – Faculty of Education, Alexandria University, Class of 2025. This website was created under the supervision of <b>Dr. Mohamed Hassan</b> and programmed by <b>Eng Haidy Yasser</b>.
+            </p>
+            <img src="https://blog.advantageclub.co/wp-content/uploads/2023/11/team-bond-for-productivity-.webp" alt="Team or Classroom Setting" class="about-image" data-aos="fade-in" data-aos-delay="400">
+        </section>
+
+        <section class="team-section" data-aos="fade-up">
+            <h2>Scientific Content Team</h2>
+            <div class="team-cards">
+                <div class="card" data-aos="zoom-in">
+                    <h3 class="card-title">Lesson One</h3>
+                    <div class="names">
+                        • Ms. ALShaima ElEbiary<br>
+                        • Ms. Badreya Ali<br>
+                        • Ms. Kholoud Mohamed
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="card-title">Lesson Two</h3>
+                    <div class="names">
+                        • Ms. Haidy Yasser<br>
+                        • Ms. Rana Mahmoud<br>
+                        • Ms. Aya Abdallah
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="400">
+                    <h3 class="card-title">Lesson Three</h3>
+                    <div class="names">
+                        • Ms. Yousr El-Shennawy<br>
+                        • Ms. Amira Mahmoud<br>
+                        • Ms. Engy Gaber<br>
+                        • Mr. Ali Ahmed
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lessons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d4a5ff 0%, #6a0dad 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            width: 90%;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #6a0dad;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #a855f7, #7c3aed);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Science Lessons</h1>
+    <div class="container">
+        <div class="card">
+            <div class="icon">☀️</div>
+            <div class="title">Lesson 1: Solar System</div>
+            <div class="description">Explore the sun, planets, and how they move in space!</div>
+            <a href="./le 1.html"><button class="button">Start Lesson</button></a>
+        </div>
+        <div class="card">
+            <div class="icon">🌱</div>
+            <div class="title">Lesson 2: Food Chain</div>
+            <div class="description">Learn how plants and animals eat each other to stay alive!</div>
+            <a href="./le 2.html"><button class="button">Start Lesson</button></a>
+        </div>
+        <div class="card">
+            <div class="icon">🐦</div>
+            <div class="title">Lesson 3: Animal and Plant Adaptations</div>
+            <div class="description">See how animals and plants change to fit their homes!</div>
+            <a href="./le 3.html"><button class="button">Start Lesson</button></a>
+        </div>
+    </div>
+</body>
+</html>
